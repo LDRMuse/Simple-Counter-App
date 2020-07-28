@@ -3,19 +3,25 @@ import React from 'react'
 import "./Button.css"
 
 export const Button = (props) => {
-  const handleClick = () => {
-    props.buttonHandler()
+  const handleClick = (event) => {
+    props.buttonHandler(event)
+
   }
-return <button onClick = {handleClick}>{props.buttonTxt}</button>
+return <button onClick = {handleClick} data-increment={props.increment}>{props.buttonTxt}</button>
 
 
 }
 
 Button.propTypes = {
   buttonHandler: PropTypes.func,
-  buttonTxt: PropTypes.string.isRequired,
+  buttonTxt: PropTypes.string,
+  increment: PropTypes.number
 }
 
+Button.defaultProps = {
+  buttonTxt: "Add 1",
+  increment: 1
+}
 
 
 

@@ -7,11 +7,13 @@ import "./Display.css"
 export class Display extends React.Component {
 
   state = {
-    currentCount: 0
+    currentCount: 0,
   }
 
-  updateCount() {
-    // Set state with new count from prevState
+  updateCount = () => {
+    this.setState(prevState => {
+      return { currentCount: prevState.currentCount + 1 }
+    })
   }
 
   render() {

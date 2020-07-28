@@ -10,6 +10,9 @@ return <button onClick = {handleClick}>{props.buttonTxt}</button>
 
 }
 
-Button.propTypes = { buttonHandler: PropTypes.func, buttonText: PropTypes.string.isRequired }
+Button.propTypes = {
+  buttonHandler: PropTypes.func,
+  buttonTxt: PropTypes.string.isRequired,
+}
 
 

@@ -1,0 +1,13 @@
+button {
+  background-color: pink;
+  padding: 1rem;
+  max-width: 200px;
+  justify-content: center;
+
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}

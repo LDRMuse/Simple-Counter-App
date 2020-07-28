@@ -8,11 +8,14 @@ export const Button = (props) => {
   }
 return <button onClick = {handleClick}>{props.buttonTxt}</button>
 
+
 }
 
 Button.propTypes = {
   buttonHandler: PropTypes.func,
   buttonTxt: PropTypes.string.isRequired,
 }
+
+
 
 
